@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8820547638835770126}
-  speed: 15
+  speed: 5
   dashDistance: 0
   gravity: -15
   jumpHeight: 5
@@ -162,6 +162,8 @@ GameObject:
   - component: {fileID: 8498507945424033805}
   - component: {fileID: 8524274902230426297}
   - component: {fileID: 8820547638835770126}
+  - component: {fileID: 583659527}
+  - component: {fileID: 3695434219151836978}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -216,6 +218,89 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &583659527
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498507945424033804}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &3695434219151836978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498507945424033804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c901546bf95f348bc11dbeefb0c887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: 'EnemyTrack1 '
+    clip: {fileID: 8300000, guid: f91b15cf597c26448b4176ea2e925ba0, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyTrack2
+    clip: {fileID: 8300000, guid: 6ad59dca03049a448986bf243f5c7351, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyTrack3
+    clip: {fileID: 8300000, guid: 1f52472882a6cd7418d386274fe3d389, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyTrack4
+    clip: {fileID: 8300000, guid: 4a18d41bc1b5ccb4b86a1d74cb978e21, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyTrack5
+    clip: {fileID: 8300000, guid: eae925ba924b5654b930ec076c9739fe, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyTrack6
+    clip: {fileID: 8300000, guid: 65747a4dfb28cfa44a984d5e183b3eed, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerTrack
+    clip: {fileID: 8300000, guid: 5151344f284e2b74ba74d18418f68dbb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CollectionSFX
+    clip: {fileID: 8300000, guid: b62c2ba7ecbae4644ac20fbb4c5631ae, type: 3}
+    volume: 0.636
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AllTracksCombined
+    clip: {fileID: 8300000, guid: 721fd0102b8fc49428dd7721c1bd5fd5, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &8498507946038627613
 GameObject:
   m_ObjectHideFlags: 0

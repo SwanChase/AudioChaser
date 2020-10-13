@@ -18,4 +18,20 @@ public class Player : MonoBehaviour
 
     #endregion
 
+    public int score;
+    private int m_MyVar = 0;
+    public int MyVar
+    {
+        get { return m_MyVar; }
+        set
+        {
+            if (m_MyVar == value) return;
+            m_MyVar = value;
+            if (OnVariableChange != null)
+                OnVariableChange(m_MyVar);
+        }
+    }
+    public delegate void OnVariableChangeDelegate(int newVal);
+    public event OnVariableChangeDelegate OnVariableChange;
+
 }
