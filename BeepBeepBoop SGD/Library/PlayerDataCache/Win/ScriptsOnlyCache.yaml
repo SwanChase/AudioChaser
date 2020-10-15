@@ -45,6 +45,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -570,4 +572,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main.unity
   playerPath: D:/UnityProjects/Sound & Game design/AudioChaser/BeepBeepBoop SGD/AudioChaser
-    V0.2/BeepBeepBoop SGD.exe
+    V0.3/BeepBeepBoop SGD.exe
